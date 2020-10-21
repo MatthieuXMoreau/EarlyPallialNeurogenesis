@@ -4,6 +4,8 @@
 
 @import "{{ site.theme }}";
 
-.page-header { color: #fff; text-align: center; background-image: url("../header.jpg"); }
+.page-header { color: #000000; text-align: center; background-image: url("../header.jpg"); }
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { margin-top: 2rem; margin-bottom: 1rem; font-weight: normal; color: #000000; }
+.main-content h1, .main-content h2, .main-content h3 { margin-top: 2rem; margin-bottom: 1rem; font-weight: normal; color: #000000; }
+
+.main-content body { text-align: justify; } 
