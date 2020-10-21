@@ -1,5 +1,8 @@
 # Early Pallial Neurogenesis
 
+![](./Figures/Figure 1.jpg)
+![](./Figures/Figure1.jpg)
+
 ## Code to figures
 
 | Figure 1               | Figure 2               | Figure 3               | Figure 4               | Figure 5               | Figure 6               | Figure 7               | Figure 8               |
