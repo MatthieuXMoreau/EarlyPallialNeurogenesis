@@ -12,9 +12,9 @@
 ## Code to supplementary figures
 
 
-| Figure S1 | Figure S2 | Figure S3 | Figure S4 |
-|-|-|-|-|
-| ![](./Figures/FigureS1.jpg) | ![](./Figures/FigureS2.jpg) | ![](./Figures/FigureS3.jpg) | ![](./Figures/FigureS4.jpg) |
+| Figure S1 | Figure S2 | Figure S3 |
+|-|-|-|
+| ![](./Figures/FigureS1.jpg) | ![](./Figures/FigureS2.jpg) | ![](./Figures/FigureS3.jpg) |
 
 | Figure S5 | Figure S6 | Figure S7 |
 |-|-|-|
