@@ -3,6 +3,6 @@
 
 @import "{{ site.theme }}";
 
-.page-header { color: #000000; text-align: center; background-image: url("../images/header.png"); }
+.page-header { color: #000000; text-align: center; background-image: url("../images/header.png"); background-color: white; }
 
 .main-content h1, .main-content h2, .main-content h3 { margin-top: 2rem; margin-bottom: 1rem; font-weight: normal; color: #000000; }
