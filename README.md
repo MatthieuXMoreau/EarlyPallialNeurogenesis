@@ -1,5 +1,16 @@
 # Early Pallial Neurogenesis
 
+To add :
+- graphical abstract
+- link to the paper
+- link to shiny interface ?
+
+## Download raw and processed datasets
+
+To add :
+- link to download raw dataset
+- link to download processed dataset
+- link to GEO for the fastq
 
 ## Code to quality control and preprocessing
 
@@ -14,7 +25,6 @@
 | ![](./Figures/Figure6.jpg) | ![](./Figures/Figure7.jpg) |
 
 ## Code to supplementary figures
-
 
 | Figure S1 | Figure S2 | Figure S3 |
 |-|-|-|
