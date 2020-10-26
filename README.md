@@ -3,16 +3,17 @@
 To add :
 - graphical abstract
 - link to the paper
-- link to shiny interface ?
 
 ## Download raw and processed datasets
 
 To add :
-- link to download raw dataset
-- link to download processed dataset
+- link to download raw dataset (GEO filtered_gene_bc_matrix)
+- link to download processed dataset (GEO to tsv file bdc and meta.data of all cells)
 - link to GEO for the fastq
 
 ## Code to quality control and preprocessing
+
+[Preprocessing and QC script]()
 
 ## Code to main figures
 
