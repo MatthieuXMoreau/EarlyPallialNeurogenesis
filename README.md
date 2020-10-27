@@ -13,13 +13,13 @@ To add :
 
 ## Code to quality control and preprocessing
 
-[Preprocessing and QC script]()
+[Preprocessing and QC script](./html-Reports/Quality_Control.html)
 
 ## Code to main figures
 
 | Figure 1 | Figure 2 | Figure 5 |
 |-|-|-|
-| ![](./Figures/Figure1.jpg) | ![](./Figures/Figure2.jpg) | ![](./Figures/Figure5.jpg) |
+| [![](./Figures/Figure1.jpg)](./html-Reports/Figure1.html) | ![](./Figures/Figure2.jpg) | ![](./Figures/Figure5.jpg) |
 
 | Figure 6 | Figure 7 |
 |-|-|
