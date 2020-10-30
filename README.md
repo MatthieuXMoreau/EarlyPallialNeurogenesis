@@ -29,7 +29,7 @@ To add :
 
 | Figure S1 | Figure S2 | Figure S3 |
 |-|-|-|
-| ![](./Figures/FigureS1.jpg) | [![](./Figures/FigureS2.jpg)](./html-Reports/FigureS2.html) | ![](./Figures/FigureS3.jpg) |
+| ![](./Figures/FigureS1.jpg) | [![](./Figures/FigureS2.jpg)](./html-Reports/FigureS2.html) | [![](./Figures/FigureS3.jpg)](./html-Reports/FigureS3.html) |
 
 | Figure S5 | Figure S6 | Figure S7 |
 |-|-|-|
