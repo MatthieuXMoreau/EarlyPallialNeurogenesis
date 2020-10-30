@@ -19,7 +19,7 @@ To add :
 
 | Figure 1 | Figure 2 | Figure 5 |
 |-|-|-|
-| [![](./Figures/Figure1.jpg)](./html-Reports/Figure1.html) | [![](./Figures/Figure2.jpg)](./html-Reports/Figure2.html) | ![](./Figures/Figure5.jpg) |
+| [![](./Figures/Figure1.jpg)](./html-Reports/Figure1.html) | [![](./Figures/Figure2.jpg)](./html-Reports/Figure2.html) | [![](./Figures/Figure5.jpg)](./html-Reports/Figure5.html) |
 
 | Figure 6 | Figure 7 |
 |-|-|
