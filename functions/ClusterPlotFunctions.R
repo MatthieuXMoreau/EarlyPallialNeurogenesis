@@ -1,5 +1,9 @@
 
-########### Cluster.dotplot ############################
+#############################################################################
+##### This function takes a list of markers and a Seurat v2.3.4 object ######
+##### and return a dotplot of the markers expression across clusters   ######
+#############################################################################
+
 Cluster.dotplot <- function(Dataset,
                             Marker.genes,
                             min.expression,
@@ -12,7 +16,7 @@ Cluster.dotplot <- function(Dataset,
   data.to.plot$id <- Dataset@ident
   
   #Reshape the dataframe
-  data.to.plot <- data.to.plot %>% gather(key = Marker.genes, value = expression, -c(Cell, id)) 
+  data.to.plot <- data.to.plot %>% tidyr::gather(key = Marker.genes, value = expression, -c(Cell, id)) 
   
   #For each genes in each cluster calculate mean expression and percent cell with norm expression > 0
   data.to.plot <- data.to.plot %>%
@@ -37,3 +41,123 @@ Cluster.dotplot <- function(Dataset,
 	    xlab("") + ylab("") +
 	    scale_colour_gradientn(colours = brewer.pal(11,"RdPu"))
 } 
+
+###################################################################################
+############ This function returns a list of all nodes marker as defined ##########
+############ using the roc test implemented in Seurat FindMarkersNode function ####
+###################################################################################
+
+Find.nodes.markers <- function(Datasrt,
+                               ngenes) {
+  Branch.markers <- list()
+  Node <- list()
+  tree <- Datasrt@cluster.tree[[1]]
+  
+  for (i in  unique(tree$edge[,1])) {
+    
+    Node[[i]] <- FindMarkersNode(object = Datasrt,
+                                 test.use = "roc",
+                                 node = i,
+                                 min.pct = 0,
+                                 logfc.threshold = 0.6,
+                                 print.bar = F,
+                                 only.pos = F)
+    
+    Node[[i]]$gene <- rownames(Node[[i]])
+    Node[[i]]$q.diff <- abs(Node[[i]]$pct.1 - Node[[i]]$pct.2)/max(Node[[i]]$pct.1, Node[[i]]$pct.2)
+    Node[[i]]$Specificity.index <- Node[[i]]$avg_logFC/ (1-Node[[i]]$q.diff)
+    
+    pos.genes  <- Node[[i]] %>%
+      filter(Specificity.index > 1 & pct.1 > 0.65) %>% #New
+      top_n(ngenes, Specificity.index) %>%
+      arrange(Specificity.index) %>%
+      pull(gene)
+    
+    neg.genes  <- Node[[i]] %>%
+      filter(Specificity.index < -1 & pct.2 > 0.65) %>% #New
+      top_n(-ngenes, Specificity.index) %>%
+      arrange(Specificity.index) %>%
+      pull(gene)
+    
+    Branch.markers[[i]] <- c(pos.genes,neg.genes)
+  }
+  
+  list.index.start <- min(unique(Datasrt@cluster.tree[[1]][["edge"]][,1])) -1
+  list.index.end <- max(unique(Datasrt@cluster.tree[[1]][["edge"]][,1])) -list.index.start
+  
+  Branch.markers <- Branch.markers[c(rep(F,list.index.start), rep(T,list.index.end))] 
+  
+  return(Branch.markers)
+}
+
+
+##############################################################################
+###### Return a list of ggplot object for each node markers ##################
+##############################################################################
+
+Node.markers.plots <- function(Datasrt,
+                              Branch.markers.list) {
+  p <- list()
+  for (i in seq(Branch.markers.list)) {
+    p[[i+1]] <- Cluster.dotplot(Datasrt,
+                                Marker.genes = rev(Branch.markers.list[[i]]),
+                                min.expression = 0.7 ,percent.mi= 0.2, maxdot.size = 5)  
+  } 
+  return(p)
+}
+
+##########################################################################
+############### Plot nodes dot plots with all clusters ###################
+##########################################################################
+
+Plot.node.markers <- function(Datasrt,
+                              node,
+                              plot){
+      tree <- Datasrt@cluster.tree[[1]]
+      plotindx <- node - tree$Nnode
+      return(plot[plotindx])
+}
+
+################################################################################
+################ Plot nodes dotplots with only a subset of clusters ############
+################################################################################
+
+Plot.node.subset.markers <- function(Datasrt,
+                                     node,
+                                     Branch.markers.list){
+  
+  tree <- Datasrt@cluster.tree[[1]]
+  
+  clusters <- c()
+  branches <- tree$edge[which(tree$edge[, 1] == node), 2]
+  next.branche <- T
+  
+  while (next.branche == T) {
+    next.branche  <- ifelse(!sum(branches > tree$Nnode+1) == 0, T, F)
+    Next.nodes <- list()
+    
+    for (i in seq(length(branches))) {
+      if (branches[i] <= tree$Nnode+1) {
+        clusters <- c(clusters,tree$tip.label[branches[i]])
+      }
+      else{
+        Next.nodes[[i]] <- tree$edge[which(tree$edge[, 1] == branches[i]), 2]
+      } 
+    } 
+    branches <- unlist(Next.nodes)
+    
+  }
+  
+  tmp.Datasrt <- SubsetData(Datasrt, ident.use = clusters, subset.raw = T,  do.clean = F)
+  
+  
+  plot.list <- Node.markers.plots(tmp.Datasrt,
+                                 Branch.markers.list)
+  
+  Plot.node.markers(tmp.Datasrt,
+                    node = node,
+                    plot =  plot.list)
+  
+  
+}
+
