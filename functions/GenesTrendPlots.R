@@ -54,7 +54,7 @@ Plot.Cluster.trend <- function(Datasrt, #The Seurat object
                                Use.scale.data #Wether to use scaled expression matrix
 ){
   
-  clust.vec <- clust.list$clustering
+  clust.vec <- clust.list
   Cluster.Genes <- names(clust.vec[clust.vec == Which.cluster])
   
   if(!Use.scale.data){
