@@ -23,7 +23,7 @@ To add :
 
 | Figure 6 | Figure 7 |
 |-|-|
-| ![](./Figures/Figure6.jpg) | [![](./Figures/Figure7.jpg)](./html-Reports/Figure7.html) |
+| [![](./Figures/Figure6.jpg)](./html-Reports/Figure6.html) | [![](./Figures/Figure7.jpg)](./html-Reports/Figure7.html) |
 
 ## Code to supplementary figures
 
