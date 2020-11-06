@@ -3,6 +3,29 @@
 
 @import "{{ site.theme }}";
 
-.page-header { color: #000000; text-align: center; background-image: url("../images/header.png"); background-color: white; }
+.page-header { 
+  color: #000000;
+  text-align: center;
+  background-image: url("../images/header.png");
+  background-size: 200% 100%;
+  background-color: white;
+    background-position: right;
 
-.main-content h1, .main-content h2, .main-content h3 { margin-top: 2rem; margin-bottom: 1rem; font-weight: normal; color: #000000; }
+  @include large {
+    padding: 5rem 6rem;
+  }
+
+  @include medium {
+    padding: 3rem 4rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+  }
+}
+
+.main-content h1, .main-content h2, .main-content h3 { 
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: #000000; }
