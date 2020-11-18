@@ -7,9 +7,8 @@ To add :
 ## Download raw and processed datasets
 
 To add :
-- link to download raw dataset (GEO filtered_gene_bc_matrix)
-- link to download processed dataset (GEO to tsv file bdc and meta.data of all cells)
-- link to GEO for the fastq
+- link to download processed dataset (GEO to csv and meta.data)
+- link to SRA for the .bam
 
 ## Code to quality control and preprocessing
 
