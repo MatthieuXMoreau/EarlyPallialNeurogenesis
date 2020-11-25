@@ -7,18 +7,17 @@
   color: #000000;
   text-align: center;
   background-image: url("../images/header.png");
-  background-size: 100% 100%;
   background-color: white; }
 
 @include large {
     padding: 5rem 6rem;
   }
 
-  @include medium {
+@include medium {
     padding: 3rem 4rem;
   }
 
-  @include small {
+@include small {
     padding: 2rem 1rem;
   }
 
