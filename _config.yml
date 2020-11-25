@@ -1,5 +1,4 @@
 theme: jekyll-theme-cayman
 title: Early Neurogenesis in the mouse pallium
-description: This repository containt all R code used to generate the figures of the study
 github:
   is_project_page: false
