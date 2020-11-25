@@ -7,8 +7,8 @@ To add :
 ## Download raw and processed datasets
 
 To add :
-- link to download processed dataset (GEO to csv and meta.data)
-- link to SRA for the .bam
+- link to GEO and meta.data)
+- link to ENA
 
 ## Code to quality control and preprocessing
 
