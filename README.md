@@ -9,7 +9,7 @@ To add :
 
 ## Links to main figures RMarkdown reports
 
-[Preprocessing and QC script](./html-Reports/Quality_Control.html)
+[Preprocessing analysis report](./html-Reports/Quality_Control.html)
 
 | Figure 1 | Figure 2 | Figure 5 |
 |-|-|-|
