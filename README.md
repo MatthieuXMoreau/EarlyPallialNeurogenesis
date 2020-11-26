@@ -1,20 +1,15 @@
-# Early Pallial Neurogenesis
-
 To add :
-- graphical abstract
 - link to the paper
 
-## Download raw and processed datasets
+## Download raw and processed dataset
 
 To add :
-- link to GEO and meta.data)
+- link to GEO count matrix and metadata 
 - link to ENA
 
-## Code to quality control and preprocessing
+## Links to main figures RMarkdown reports
 
 [Preprocessing and QC script](./html-Reports/Quality_Control.html)
-
-## Code to main figures
 
 | Figure 1 | Figure 2 | Figure 5 |
 |-|-|-|
@@ -24,7 +19,7 @@ To add :
 |-|-|
 | [![](./Figures/Figure6.jpg)](./html-Reports/Figure6.html) | [![](./Figures/Figure7.jpg)](./html-Reports/Figure7.html) |
 
-## Code to supplementary figures
+## Links to supplementary figures RMarkdown reports
 
 | Figure S1 | Figure S2 | Figure S3 |
 |-|-|-|
