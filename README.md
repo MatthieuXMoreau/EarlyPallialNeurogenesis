@@ -30,4 +30,4 @@ To add :
 
 | Figure S5 | Figure S6 | Figure S7 |
 |-|-|-|
-| [![](./Figures/FigureS5.jpg)](./html-Reports/FigureS5.html) | [![](./Figures/FigureS6.jpg)](https://matthieuxmoreau.github.io/EarlyPallialNeurogenesis/html-Reports/Figure5.html#Plot-the-representative-gene-of-the-Figure-S6) | [![](./Figures/FigureS7.jpg)](https://matthieuxmoreau.github.io/EarlyPallialNeurogenesis/html-Reports/Figure7.html#Plot-relevant-gene-trends) |
+| [![](./Figures/FigureS5.jpg)](./html-Reports/FigureS5.html) | [![](./Figures/FigureS6.jpg)](https://matthieuxmoreau.github.io/EarlyPallialNeurogenesis/html-Reports/Figure5.html#Plot_the_representative_gene_of_the_Figure_S6) | [![](./Figures/FigureS7.jpg)](https://matthieuxmoreau.github.io/EarlyPallialNeurogenesis/html-Reports/Figure7.html#Plot_relevant_gene_trends) |
