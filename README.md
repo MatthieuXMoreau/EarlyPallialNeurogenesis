@@ -24,10 +24,10 @@ To add :
 
 ### Links to supplementary figures RMarkdown reports
 
-| Figure S1 | Figure S2 | Figure S3 |
-|-|-|-|
-| [![](./Figures/FigureS1.jpg)](./html-Reports/FigureS1.html) | [![](./Figures/FigureS2.jpg)](./html-Reports/FigureS2.html) | [![](./Figures/FigureS3.jpg)](./html-Reports/FigureS3.html) |
+| Figure S1A | Figure S1B | Figure S2 | Figure S3 |
+|-|-|-|-|
+| [![](./Figures/FigureS1A.jpg)](./html-Reports/FigureS1A.html) | [![](./Figures/FigureS1.jpg)](./html-Reports/FigureS1.html) | [![](./Figures/FigureS2.jpg)](./html-Reports/FigureS2.html) | [![](./Figures/FigureS3.jpg)](./html-Reports/FigureS3.html) |
 
 | Figure S5 | Figure S6 | Figure S7 |
 |-|-|-|
-| [![](./Figures/FigureS5.jpg)](./html-Reports/FigureS5.html) | [![](./Figures/FigureS6.jpg)](https://matthieuxmoreau.github.io/EarlyPallialNeurogenesis/html-Reports/Figure5.html#Plot_the_representative_gene_of_the_Figure_S6) | [![](./Figures/FigureS7.jpg)](https://matthieuxmoreau.github.io/EarlyPallialNeurogenesis/html-Reports/Figure7.html#Plot_relevant_gene_trends) |
+| [![](./Figures/FigureS5.jpg)](./html-Reports/FigureS5.html) | [![](./Figures/Figure6IJS6.jpg)](./html-Reports/Figure6IJS6.html) | [![](./Figures/FigureS7.jpg)](https://matthieuxmoreau.github.io/EarlyPallialNeurogenesis/html-Reports/Figure7.html#Plot_relevant_gene_trends) |
