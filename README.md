@@ -6,9 +6,8 @@ This page contains R codes and data related to the bioRxiv preprint :
 
 ### Download raw and processed dataset
 
-To add :
-- link to GEO count matrix and metadata 
-- link to ENA
+- Raw count matrix has been in GEO (GSE161605) and can be dowloaded [here](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE161605&format=file)
+- Sequencing reads are available on the [ENA](https://www.ebi.ac.uk/ena/browser/view/SRX9519507)
 
 ### Links to main figures RMarkdown reports
 
