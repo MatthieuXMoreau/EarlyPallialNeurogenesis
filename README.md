@@ -1,13 +1,14 @@
 
-This page contains R codes and data related to the bioRxiv preprint :
+This page contains R codes and data related to the article :
 
-*Moreau, M.X.<sup>[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-2592-2373)</sup>, Saillour, Y., Cwetsch, A.W.<sup>[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8156-1218)</sup>, Pierani, A.<sup>[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-4872-4791)</sup> & Causeret, F.<sup>[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0543-4938)</sup>* [Single-cell transcriptomics of the early developing mouse cerebral cortex disentangles the spatial and temporal components of neuronal fate acquisition.](https://doi.org/10.1101/2020.11.27.401398)
-
+*Moreau, M.X.<sup>[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-2592-2373)</sup>, Saillour, Y., Cwetsch, A.W.<sup>[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-8156-1218)</sup>, Pierani, A.<sup>[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-4872-4791)</sup> & Causeret, F.<sup>[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0543-4938)</sup>* [Single-cell transcriptomics of the early developing mouse cerebral cortex disentangles the spatial and temporal components of neuronal fate acquisition](https://doi.org/10.1242/dev.197962) Development 15 July 2021; 148 (14): dev197962. (link to the initial *[BioRxiv preprint](https://doi.org/10.1101/2020.11.27.401398)*)
 
 ### Download raw and processed dataset
 
 - Raw count matrix has been in GEO (GSE161605) and can be dowloaded [here](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE161605&format=file)
 - Sequencing reads are available on the [ENA](https://www.ebi.ac.uk/ena/browser/view/SRX9519507)
+
+- Cells' metadata files in csv format can be retreived from this repository [here](./data/metadata) 
 
 ### Links to main figures RMarkdown reports
 
