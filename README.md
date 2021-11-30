@@ -31,3 +31,5 @@ This page contains R codes and data related to the article :
 | Figure S5 | Figure S6 | Figure S7 |
 |-|-|-|
 | [![](./Figures/FigureS5.jpg)](./html-Reports/FigureS5.html) | [![](./Figures/Figure6IJS6.jpg)](./html-Reports/Figure6IJS6.html) | [![](./Figures/FigureS7.jpg)](https://matthieuxmoreau.github.io/EarlyPallialNeurogenesis/html-Reports/Figure7.html#Plot_relevant_gene_trends) |
+
+This page is directly inspired from @juliendelile's [MouseSpinalCordAtlas repository](https://github.com/juliendelile/MouseSpinalCordAtlas) 
